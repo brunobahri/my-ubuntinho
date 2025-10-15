@@ -1,0 +1,35 @@
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Backup files
+*.bak
+*.swp
+*.swo
+*~
+
+# Logs
+*.log
+
+# Temporary files
+tmp/
+temp/
+.tmp
+
+# Editor configs (uncomment if you want to share these)
+# .vscode/
+# .idea/
+
+# Private/sensitive configs (add here any config with passwords, tokens, etc)
+secrets/
+*.secret
+*.private
+
+# Test files
+test/
+tests/
