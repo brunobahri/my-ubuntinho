@@ -1,8 +1,8 @@
 [Desktop Entry]
 Type=Application
-Name=Touchpad Configuration
-Comment=Desativa tap-and-drag no touchpad
-Exec=/home/brunobahri/scripts/fix-touchpad.sh
+Name=Touchpad Fix
+Comment=Disable tap-and-drag
+Exec=/home/brunobahri/Documents/Projetos/my-ubuntinho/scripts/touchpad/disable-tap-drag.sh
 Hidden=false
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
