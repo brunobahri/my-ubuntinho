@@ -1,0 +1,27 @@
+# TLP - Perfil MÁXIMA ECONOMIA
+# Este arquivo sobrescreve configurações do /etc/tlp.conf quando ativo
+# Para ativar: use o script tlp-perfil economia
+#
+# Ganho esperado: ~50-60% mais bateria
+# Custo: Sistema visivelmente mais lento
+# Recomendado para: Viagens longas, quando precisa durar o dia todo
+
+# CPU - Máxima economia
+CPU_ENERGY_PERF_POLICY_ON_BAT=power
+CPU_MAX_PERF_ON_BAT=60
+CPU_BOOST_ON_BAT=0
+
+# GPU Intel - Limita frequência máxima
+INTEL_GPU_MAX_FREQ_ON_BAT=700
+INTEL_GPU_MIN_FREQ_ON_BAT=100
+INTEL_GPU_BOOST_FREQ_ON_BAT=700
+
+# Wi-Fi - Economia ativa
+WIFI_PWR_ON_BAT=on
+
+# Runtime PM - Máxima economia
+RUNTIME_PM_ON_BAT=auto
+AHCI_RUNTIME_PM_ON_BAT=auto
+
+# USB Autosuspend
+USB_AUTOSUSPEND=1

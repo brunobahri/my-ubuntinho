@@ -1,0 +1,27 @@
+# TLP - Perfil BALANCEADO (Padrão)
+# Este arquivo sobrescreve configurações do /etc/tlp.conf quando ativo
+# Para ativar: use o script tlp-perfil balanceado
+#
+# Ganho esperado: ~25-30% mais bateria
+# Custo: Quase imperceptível
+# Recomendado para: Uso diário normal
+
+# CPU - Economia moderada
+CPU_ENERGY_PERF_POLICY_ON_BAT=balance_power
+CPU_MAX_PERF_ON_BAT=100
+CPU_BOOST_ON_BAT=0
+
+# GPU Intel - Limita frequência moderadamente
+INTEL_GPU_MIN_FREQ_ON_BAT=100
+INTEL_GPU_MAX_FREQ_ON_BAT=1000
+INTEL_GPU_BOOST_FREQ_ON_BAT=1000
+
+# Wi-Fi - Economia ativa
+WIFI_PWR_ON_BAT=on
+
+# Runtime PM - Economia
+RUNTIME_PM_ON_BAT=auto
+AHCI_RUNTIME_PM_ON_BAT=auto
+
+# USB Autosuspend
+USB_AUTOSUSPEND=1

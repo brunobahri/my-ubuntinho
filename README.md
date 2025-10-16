@@ -34,16 +34,47 @@ The script will run automatically on login.
 - GNOME Desktop Environment
 - `gsettings` (usually pre-installed)
 
+### TLP Power Profiles
+
+Advanced power management with three switchable profiles for optimal battery life.
+
+**Profiles:**
+- Balanceado: ~25-30% more battery (recommended)
+- Economia: ~50-60% more battery (long trips)
+- Performance: Maximum CPU/GPU performance
+
+**Installation:**
+```bash
+cd tlp-power-profiles
+chmod +x install.sh
+sudo ./install.sh
+```
+
+**Usage:**
+```bash
+tlp-perfil balanceado   # Default profile
+tlp-perfil economia     # Maximum battery saving
+tlp-perfil performance  # Maximum performance
+```
+
+See [tlp-power-profiles/README.md](tlp-power-profiles/README.md) for detailed documentation.
+
 ## Structure
 
 ```
 my-ubuntinho/
-├── install.sh                           # Installation script
+├── install.sh                           # Installation script (touchpad)
 ├── scripts/
 │   └── touchpad/
 │       └── disable-tap-drag.sh          # Disables tap-and-drag
-└── autostart/
-    └── touchpad-config.desktop          # GNOME autostart configuration
+├── autostart/
+│   └── touchpad-config.desktop          # GNOME autostart configuration
+└── tlp-power-profiles/
+    ├── README.md                        # TLP profiles documentation
+    ├── install.sh                       # TLP profiles installer
+    ├── configs/                         # TLP configuration files
+    ├── scripts/                         # Profile manager script
+    └── docs/                            # Technical documentation
 ```
 
 ## License

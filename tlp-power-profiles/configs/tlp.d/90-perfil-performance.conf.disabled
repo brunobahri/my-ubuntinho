@@ -1,0 +1,25 @@
+# TLP - Perfil PERFORMANCE MÁXIMA
+# Este arquivo sobrescreve configurações do /etc/tlp.conf quando ativo
+# Para ativar: use o script tlp-perfil performance
+#
+# Ganho esperado: 0% (mesma bateria de sempre ou até -40%)
+# Custo: Bateria dura ~40% menos que balanceado
+# Recomendado para: Quando precisa de performance máxima na bateria
+
+# CPU - Performance máxima (força configurações AC)
+CPU_ENERGY_PERF_POLICY_ON_BAT=balance_performance
+CPU_MAX_PERF_ON_BAT=100
+CPU_BOOST_ON_BAT=1
+CPU_HWP_DYN_BOOST_ON_BAT=1
+
+# GPU Intel - Sem limitações
+INTEL_GPU_MAX_FREQ_ON_BAT=1400
+INTEL_GPU_MIN_FREQ_ON_BAT=100
+INTEL_GPU_BOOST_FREQ_ON_BAT=1400
+
+# Wi-Fi - Sem economia
+WIFI_PWR_ON_BAT=off
+
+# Runtime PM - Desabilitado
+RUNTIME_PM_ON_BAT=on
+AHCI_RUNTIME_PM_ON_BAT=on
